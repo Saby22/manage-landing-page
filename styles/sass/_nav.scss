@@ -1,0 +1,67 @@
+.nav{
+
+    //border:1px solid magenta;
+    display: flex;
+    max-width: 1400px;
+    width: 90%;
+    height: 3.75em;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25em auto 0 auto;
+    background: transparent;
+    
+
+    // a{
+    //     // display: inline-block;
+    //     // height: 100%;
+        
+    //     // top: 0.7em;
+    //     // right: 0;
+    //     // left: 0;
+    // }
+
+    &-logo{
+        position: relative;
+        top: 0.22em;
+        background: url(/images/logo.svg);
+        width: 7.875em;
+        height: 1.5em;
+        background-size: contain ;
+        background-repeat: no-repeat;
+        // border: 1px solid magenta;
+        background-position: center;
+        
+    }
+
+    &-links{
+        display: none;
+    }
+    .cta-btn{
+        display: none;
+    }
+
+    &-hamburger{
+
+        // border: 1px solid magenta;
+        
+
+        span{
+            
+            display: block;
+            background-color: color(blueDark);
+            width: 1.5625em;
+            height: 0.25em;
+            //border: 2px solid red;
+            
+        }
+
+        span:not(:last-child){
+            margin-bottom: 0.25em;
+        }
+
+    } 
+
+    
+
+}
+

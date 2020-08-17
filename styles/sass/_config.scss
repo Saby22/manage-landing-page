@@ -1,0 +1,54 @@
+$colors:(
+    brightRed: hsl(12, 88%, 59%),
+    blueDark: hsl(228, 39%, 23%),
+
+    darkGrayishBlue: hsl(227, 12%, 61%),
+    veryDarkBlue: hsl(233, 12%, 13%),
+    veryPaleRed: hsl(13, 100%, 96%),
+    veryLightGray: hsl(0, 0%, 98%)
+);
+
+/*functions*/
+
+@function color($colorName){
+    @return map-get($colors, $colorName);
+}
+
+
+
+
+
+
+
+/*mixins*/
+@mixin min-width($width){
+    @media screen and (min-width:$width){
+        @content
+    }
+};
+
+@mixin max-width($width){
+    @media screen and (max-width:$width){
+        @content
+    }
+};
+
+/*inheritance*/
+%cta-btn{
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 50px;
+    color: white;
+    background: color(brightRed);
+    padding: 0.8rem 2rem;
+    transition: opacity 250ms ease-in-out;
+    filter: drop-shadow(0 0.5em 5px rgba(242,95,58,0.5));
+    border: none;
+}
+
+%cta-btn-hover{
+    opacity: 50%;
+}
+
+
