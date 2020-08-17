@@ -147,6 +147,7 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50px 0 0 50px;
+  margin-left: 0.4em;
 }
 
 .pointers-1 .number, .pointers-2 .number, .pointers-3 .number {
@@ -163,13 +164,14 @@
   color: #242d52;
   display: inline;
   font-size: 0.91rem;
+  font-weight: 700;
 }
 
 .pointers-1 p, .pointers-2 p, .pointers-3 p {
   margin: 0;
   color: #9095a7;
   line-height: 2em;
-  padding: 0.7em 1.375em 3.1em 0;
+  padding: 0.7em 1.075em 3.1em 0.23em;
   font-size: 0.9rem;
 }
 

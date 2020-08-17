@@ -6,6 +6,7 @@
         display: flex;
         align-items: center;
         border-radius: 50px 0 0 50px;
+        margin-left: 0.4em;
 
     }
 
@@ -24,26 +25,16 @@
         color: color(blueDark);
         display: inline;
         font-size: 0.91rem;
-
+        font-weight: 700;
     }
 
     p{
         margin:0;
         color: color(darkGrayishBlue);
         line-height: 2em;
-        padding: 0.7em 1.375em 3.1em 0;
+        padding: 0.7em 1.075em 3.1em 0.23em;
         font-size: 0.9rem;
     }
-
-    // .pointers-container{
-    //     background-color:color(veryPaleRed);
-    //     height: 2.3em;
-    //     display: flex;
-    //     align-items: center;
-    //     border-radius: 50px 0 0 50px;
-
-    // }
-
 };
 
 .pointers{
