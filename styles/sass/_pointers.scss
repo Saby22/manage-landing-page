@@ -1,42 +1,54 @@
 %pointer-style{
-    .number{
-        display: inline;
-        border-radius: 50px;
-        background-color:color(brightRed);
-        padding: 0.4em 1.6em;
-        text-align: center;
-        color: white;
-        margin-right: 0.6em;
-
-    }
-    h3{
-        color: color(blueDark);
-        display: inline;
-        font-size: 1.05rem;
-
-    }
-
-    p{
-        color: color(darkGrayishBlue);
-        line-height: 2em;
-        margin:1.5em 1.375em 2.5em 0;
-        font-size: 0.9rem;
-    }
 
     .pointers-container{
         background-color:color(veryPaleRed);
-        height: 2.3em;
+        height: 2.6em;
         display: flex;
         align-items: center;
         border-radius: 50px 0 0 50px;
 
     }
 
+    .number{
+        display: inline;
+        border-radius: 50px;
+        background-color:color(brightRed);
+        padding: 0.5em 1.7em;
+        text-align: center;
+        color: white;
+        margin-right: 0.6em;
+        
+
+    }
+    h3{
+        color: color(blueDark);
+        display: inline;
+        font-size: 0.91rem;
+
+    }
+
+    p{
+        margin:0;
+        color: color(darkGrayishBlue);
+        line-height: 2em;
+        padding: 0.7em 1.375em 3.1em 0;
+        font-size: 0.9rem;
+    }
+
+    // .pointers-container{
+    //     background-color:color(veryPaleRed);
+    //     height: 2.3em;
+    //     display: flex;
+    //     align-items: center;
+    //     border-radius: 50px 0 0 50px;
+
+    // }
+
 };
 
 .pointers{
 
-    margin:0 0 0 0.6em;
+    padding:0 0 0 0.6em;
     width: 100%;
     height: auto;
     
