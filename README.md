@@ -6,9 +6,9 @@
 
 Thank you for checking out this repository.
 
-This is a coding challenge to improve the front-end development skills in a real-life workflow.
+This was a coding challenge to improve the front-end development skills in a real-life workflow.
 
-**A basic understanding of HTML, CSS and Javascript is required to complete this challenge.**
+**A basic understanding of HTML, CSS and Javascript was necessary to complete this challenge.**
 
 ## The Challenge
 
@@ -33,4 +33,4 @@ The users should be able to:
 
 The design of the landing page was provided by [Frontend Mentor](https://www.frontendmentor.io).
 
-You can find out more about this challenge and all the relevant design materials [here](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5)
+You can find out more about this challenge and all the relevant design materials [here](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5).
