@@ -196,6 +196,10 @@
   color: #242d52;
 }
 
+.swiper-container .cta-btn {
+  margin-bottom: 1.2em;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
