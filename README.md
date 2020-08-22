@@ -29,6 +29,10 @@ The users should be able to:
 - SASS (SCSS)
 - Javascript
 
+## Libraries Used
+
+- Swiper JS
+
 ## Where To Find This Challenge?
 
 The design of the landing page was provided by [Frontend Mentor](https://www.frontendmentor.io).

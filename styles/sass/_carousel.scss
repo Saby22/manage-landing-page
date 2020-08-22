@@ -1,0 +1,74 @@
+.swiper-container {
+    width: 90%;
+    height: auto;
+    text-align: center;
+
+    h1{
+        margin: 0 auto 3em auto;
+        color: color(blueDark);
+    }
+
+    .cta-btn{
+        @extend %cta-btn;
+    }
+
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    .rev-1,.rev-2,.rev-3,.rev-4{
+        display: flex;
+        flex-direction: column;
+        background-color: color(veryLightGray);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        img{
+            position: relative;
+            width: 70px;
+            bottom: 2em;
+        }
+        h3{
+            margin-top: -1em;
+            color: color(blueDark);
+        }
+        p{
+            color: color(darkGrayishBlue);
+            font-size: 1rem;
+            line-height: 1.8em;
+            font-weight: 400;
+            width: 80%;
+            margin: 0 auto 2em auto;
+        }
+    }
+  }
+
+//Adding styles to the bullets
+.swiper-pagination-bullet{
+    background-color: white !important;
+    border: 1px solid color(brightRed) !important;
+    opacity: 1 !important;
+
+}
+
+.swiper-pagination-bullet-active{
+    background-color: color(brightRed) !important;
+
+}
