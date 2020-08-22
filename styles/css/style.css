@@ -1,7 +1,7 @@
 /*functions*/
 /*mixins*/
 /*inheritance*/
-.hero-container .cta-btn, .swiper-container .cta-btn {
+.hero-container .cta-btn, .swiper-container .cta-btn, .bottom-cta .container .cta-btn {
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -258,6 +258,50 @@
 
 .swiper-pagination-bullet-active {
   background-color: #f25f3a !important;
+}
+
+.bottom-cta {
+  margin-top: 4em;
+  height: 25em;
+  background-color: #f25f3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-cta .container {
+  width: 80%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  margin: 0;
+}
+
+.bottom-cta .container h1 {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  color: white;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
+.bottom-cta .container .cta-btn {
+  color: #f25f3a;
+  background: white;
+  font-weight: 700;
+  padding: 1rem 1.6rem;
 }
 
 html {
