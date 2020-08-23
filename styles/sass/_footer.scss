@@ -1,0 +1,98 @@
+footer{
+    height: 33.75rem;
+    background-color: color(veryDarkBlue);
+    display: flex;
+    align-items: center;
+}
+
+.footer-container{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .email-submission{
+
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5em;
+
+        input[type="email"]{
+            border: none;
+            outline: none;
+            width: 72%;
+            height: 45px;
+            border-radius: 90px;
+            font-family: 'Be Vietnam', sans-serif;
+            padding-left: 2em;
+            text-align: left;
+        }
+    
+        button{
+            border: none;
+            outline: none;
+            width: 20%;
+            height: 45px;
+            border-radius: 90px;
+            padding: 0 2.8em;
+            background-color: color(brightRed);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .links{
+
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2.5em;
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            padding: 0;
+            margin: 0;
+            li{
+                margin-bottom: 0.8em;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }  
+        }
+    }
+
+    .social-logos{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 36px;
+        }
+        margin-bottom: 3em;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        img{
+            height: 34px;
+        }   
+        margin-bottom: 4em;
+    }
+
+    h6{
+        margin: 0;
+        color: color(darkGrayishBlue);
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+    
+}
