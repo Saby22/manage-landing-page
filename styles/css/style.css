@@ -58,6 +58,11 @@
   display: none;
 }
 
+.nav-hamburger {
+  z-index: 2;
+  cursor: pointer;
+}
+
 .nav-hamburger span {
   display: block;
   background-color: #242d52;
@@ -67,6 +72,12 @@
 
 .nav-hamburger span:not(:last-child) {
   margin-bottom: 0.25em;
+}
+
+.nav-cross {
+  display: none;
+  cursor: pointer;
+  z-index: 3;
 }
 
 .hero-container {
@@ -449,6 +460,74 @@ footer {
   text-align: center;
   font-weight: 400;
   font-size: 0.8rem;
+}
+
+.gradient-overlay {
+  min-width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cbcbcb), color-stop(100%, #595959), to(black));
+  background: linear-gradient(180deg, #cbcbcb 0%, #595959 100%, black 100%);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  display: none;
+  z-index: 2;
+}
+
+.gradient-overlay-active {
+  display: block;
+  opacity: 0.5;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.mobile-nav {
+  z-index: 3;
+  display: none;
+  border-radius: 5px;
+  width: 85%;
+  position: absolute;
+  top: 6.5em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.mobile-nav .mobile-nav-links-items {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 0;
+}
+
+.mobile-nav .mobile-nav-links-items a {
+  text-decoration: none;
+  color: #242d52;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.mobile-nav .mobile-nav-links-items li:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+
+.mobile-nav-active {
+  display: block;
+}
+
+.mobile-nav-active .mobile-nav-links-items {
+  display: block;
 }
 
 html {

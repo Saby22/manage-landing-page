@@ -43,8 +43,8 @@
     &-hamburger{
 
         // border: 1px solid magenta;
-        
-
+        z-index: 2;
+        cursor: pointer;
         span{
             
             display: block;
@@ -59,7 +59,13 @@
             margin-bottom: 0.25em;
         }
 
-    } 
+    }
+
+    &-cross{
+        display: none;
+        cursor: pointer;
+        z-index: 3;
+    }
 
     
 
