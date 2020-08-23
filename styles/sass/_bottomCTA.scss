@@ -29,5 +29,9 @@
             font-weight: 700;
             padding: 1rem 1.6rem;
         }
+
+        .cta-btn:hover{
+            @extend %cta-btn-hover;
+        } 
     }
 }

@@ -45,6 +45,8 @@ $colors:(
     transition: opacity 250ms ease-in-out;
     filter: drop-shadow(0 0.5em 5px rgba(242,95,58,0.5));
     border: none;
+    cursor: pointer;
+    outline: none;
 }
 
 %cta-btn-hover{
