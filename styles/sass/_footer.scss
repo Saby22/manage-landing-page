@@ -5,6 +5,7 @@ footer{
     align-items: center;
 }
 
+
 .footer-container{
     width: 85%;
     height: auto;
@@ -12,7 +13,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    position: relative;
     .email-submission{
 
         display: flex;
@@ -20,7 +21,7 @@ footer{
         margin-bottom: 2.5em;
 
         input[type="email"]{
-            border: none;
+            border: 0px solid;
             outline: none;
             width: 72%;
             height: 45px;
@@ -51,6 +52,7 @@ footer{
         }
     }
 
+    
     .links{
 
         height: auto;
@@ -100,4 +102,28 @@ footer{
         font-size: 0.8rem;
     }
     
+}
+
+//Style the error for email input
+.email-error-border{
+    border: 1.5px solid color(brightRed) !important;
+    color: color(brightRed);
+}
+
+.email-error-message::after{
+    content: 'Please insert a valid email';
+    font-size: 0.9rem;
+    position: absolute;
+    top: 3.4em;
+    left: 1.1em;
+    color: color(brightRed);
+}
+
+.email-success-message::after{
+    content: 'Congratulations!';
+    font-size: 0.9rem;
+    position: absolute;
+    top: 3.4em;
+    left: 1.1em;
+    color: color(brightRed);
 }

@@ -346,6 +346,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .footer-container .email-submission {
@@ -359,7 +360,7 @@ footer {
 }
 
 .footer-container .email-submission input[type="email"] {
-  border: none;
+  border: 0px solid;
   outline: none;
   width: 72%;
   height: 45px;
@@ -460,6 +461,29 @@ footer {
   text-align: center;
   font-weight: 400;
   font-size: 0.8rem;
+}
+
+.email-error-border {
+  border: 1.5px solid #f25f3a !important;
+  color: #f25f3a;
+}
+
+.email-error-message::after {
+  content: 'Please insert a valid email';
+  font-size: 0.9rem;
+  position: absolute;
+  top: 3.4em;
+  left: 1.1em;
+  color: #f25f3a;
+}
+
+.email-success-message::after {
+  content: 'Congratulations!';
+  font-size: 0.9rem;
+  position: absolute;
+  top: 3.4em;
+  left: 1.1em;
+  color: #f25f3a;
 }
 
 .gradient-overlay {
