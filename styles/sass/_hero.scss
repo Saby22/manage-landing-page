@@ -7,17 +7,22 @@
     flex-direction: column;
     height: auto;
     //border: 1px solid black;
+    //Change flex direction at 961px
+    @include min-width(961px){
+        flex-direction: row;
+    }
 
     .hero-image{
         order: 1;
         max-width: 27.875em;
-        // max-height: 400px;
-        //border: 1px solid blue;
         margin: 0 auto 3em auto;
         img{
             max-width: 100%;
-            //margin: 0 auto;
-            //border: 1px solid coral;
+        }
+
+        //Change flex order at 961px
+        @include min-width(961px){
+            order: 2;
         }
         
     }

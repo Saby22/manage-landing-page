@@ -26,6 +26,11 @@
         display: inline;
         font-size: 0.91rem;
         font-weight: 700;
+
+        //change the h3 size at 383px
+        @include min-width(383px){
+            font-size: 1rem;
+        }
     }
 
     p{
@@ -34,6 +39,11 @@
         line-height: 2em;
         padding: 0.7em 1.075em 3.1em 0.23em;
         font-size: 0.9rem;
+
+        //change the p font size at 630px
+        @include min-width(630px){
+            font-size: 0.95rem;
+        }
     }
 };
 

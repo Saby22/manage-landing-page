@@ -1,7 +1,7 @@
 /*functions*/
 /*mixins*/
 /*inheritance*/
-.hero-container .cta-btn, .swiper-container .cta-btn, .bottom-cta .container .cta-btn {
+.nav .cta-btn, .hero-container .cta-btn, .swiper-container .cta-btn, .bottom-cta .container .cta-btn {
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -18,8 +18,21 @@
   outline: none;
 }
 
-.hero-container .cta-btn:hover, .swiper-container .cta-btn:hover, .bottom-cta .container .cta-btn:hover, .footer-container .email-submission button:hover {
+.nav .cta-btn:hover, .hero-container .cta-btn:hover, .swiper-container .cta-btn:hover, .bottom-cta .container .cta-btn:hover, .footer-container .email-submission button:hover {
   opacity: 50%;
+}
+
+/*hide for mobile classes*/
+@media screen and (max-width: 886px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 887px) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .nav {
@@ -50,12 +63,24 @@
   background-position: center;
 }
 
-.nav-links {
-  display: none;
+.nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
 }
 
-.nav .cta-btn {
-  display: none;
+.nav-links ul li {
+  margin: 0 0.9em;
+  color: #242d52;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-links ul li {
+    margin: 0 1.5em;
+  }
 }
 
 .nav-hamburger {
@@ -94,6 +119,15 @@
   height: auto;
 }
 
+@media screen and (min-width: 961px) {
+  .hero-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .hero-container .hero-image {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -104,6 +138,14 @@
 
 .hero-container .hero-image img {
   max-width: 100%;
+}
+
+@media screen and (min-width: 961px) {
+  .hero-container .hero-image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .hero-container .hero-text {
@@ -180,12 +222,24 @@
   font-weight: 700;
 }
 
+@media screen and (min-width: 383px) {
+  .pointers-1 h3, .pointers-2 h3, .pointers-3 h3 {
+    font-size: 1rem;
+  }
+}
+
 .pointers-1 p, .pointers-2 p, .pointers-3 p {
   margin: 0;
   color: #9095a7;
   line-height: 2em;
   padding: 0.7em 1.075em 3.1em 0.23em;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 630px) {
+  .pointers-1 p, .pointers-2 p, .pointers-3 p {
+    font-size: 0.95rem;
+  }
 }
 
 .pointers {
@@ -568,5 +622,13 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: 'Be Vietnam', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -53,4 +53,15 @@ $colors:(
     opacity: 50%;
 }
 
+/*hide for mobile classes*/
+.hide-for-mobile{
+    @include max-width(886px){
+        display: none;
+    }
+}
 
+.hide-for-desktop{
+    @include min-width(887px){
+        display: none;
+    }
+}
