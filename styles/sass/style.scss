@@ -2,26 +2,17 @@
 @import 'nav';
 @import 'background';
 @import 'hero';
-@import 'info';
-@import 'pointers';
+@import 'infoAndPointers';
 @import 'carousel';
 @import 'bottomCTA';
 @import 'footer';
 @import 'hamburgerStyles';
 
-
-// @import 'bg';
-
-// @import 'hero';
-// @import 'info';
-
 html{
-
     box-sizing: border-box;
 }
 
 *,*::before,*::after{
-
     box-sizing: inherit;
 }
 
@@ -29,4 +20,12 @@ body{
     margin: 0 auto;
     padding: 0;
     font-family: 'Be Vietnam', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
 }

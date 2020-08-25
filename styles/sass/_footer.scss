@@ -3,6 +3,11 @@ footer{
     background-color: color(veryDarkBlue);
     display: flex;
     align-items: center;
+
+    //change the height @971px
+    @include min-width(971px){
+        height: 250px;
+    }
 }
 
 
@@ -14,8 +19,14 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    .email-submission{
+   
+    //change the height and width @971px
+    @include min-width(971px){
+        max-width: 1120px;
+        height: 60%;
+    }
 
+    .email-submission{
         display: flex;
         justify-content: space-between;
         margin-bottom: 2.5em;
@@ -50,17 +61,23 @@ footer{
         button:hover{
             @extend %cta-btn-hover;
         }
+
+        //Set the position @971px
+        @include min-width(971px){
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35%;
+        }
     }
 
     
     .links{
-
         height: auto;
         display: flex;
         justify-content: space-around;
         margin-bottom: 2.5em;
         ul{
-            list-style: none;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap-reverse;
@@ -70,28 +87,71 @@ footer{
                 margin-bottom: 0.8em;
                 a{
                     color: white;
-                    text-decoration: none;
+                    transition: color 170ms ease-in-out;
+                }
+
+                a:hover{
+                    color: color(brightRed);
                 }
             }  
+        }
+
+        //Set the position @971px
+        @include min-width(971px){
+            font-size: 0.9rem;
+            position: absolute;
+            top: 0.4em;
+            left: 16em;
+            width: 40%;
         }
     }
 
     .social-logos{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 3em;
+
         img{
             width: 36px;
+            cursor: pointer;
+            transition: transform 200ms ease-in-out;
+
+            @include min-width(971px){
+                width:21px;
+            }
         }
-        margin-bottom: 3em;
+
+        img:hover{
+            transform: scale(1.5);
+        }
+        
+        //Set the position @971px
+        @include min-width(971px){
+            position: absolute;
+            bottom: 0.5em;
+            left: 0;
+            margin: 0;
+            width: 18%;
+        }
     }
 
     .logo{
         display: flex;
         justify-content: center;
+        margin-bottom: 4em;
         img{
             height: 34px;
-        }   
-        margin-bottom: 4em;
+            @include min-width(971px){
+                height: 24px;
+            }
+        }
+        
+        //Set the position @971px
+        @include min-width(971px){
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 
     h6{
@@ -100,8 +160,14 @@ footer{
         text-align: center;
         font-weight: 400;
         font-size: 0.8rem;
+
+        //Set the position @971px
+        @include min-width(971px){
+            position: absolute;
+            bottom: 2em;
+            right: 0;
+        }
     }
-    
 }
 
 //Style the error for email input

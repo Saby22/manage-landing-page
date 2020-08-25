@@ -1,24 +1,12 @@
 .nav{
-
-    //border:1px solid magenta;
     display: flex;
-    max-width: 1400px;
+    max-width: 1120px;
     width: 90%;
     height: 3.75em;
     justify-content: space-between;
     align-items: center;
     margin: 1.25em auto 0 auto;
     background: transparent;
-    
-
-    // a{
-    //     // display: inline-block;
-    //     // height: 100%;
-        
-    //     // top: 0.7em;
-    //     // right: 0;
-    //     // left: 0;
-    // }
 
     &-logo{
         position: relative;
@@ -28,21 +16,43 @@
         height: 1.5em;
         background-size: contain ;
         background-repeat: no-repeat;
-        // border: 1px solid magenta;
-        background-position: center;
-        
+        background-position: center; 
     }
 
-    &-links{
-        display: none;
+    &-links ul{
+        display: flex;
+        padding-left: 0;
+
+        li{
+            margin: 0 0.9em;
+            font-weight: 500;
+            font-size: 0.9rem;
+            a{
+                color: color(blueDark);
+                font-weight:500;
+                transition: opacity 200ms ease-in-out;
+            }
+
+            a:hover{
+                opacity: 50%;
+            }
+
+            //At 1090px , increase the margin between the nav links
+            @include min-width(1090px){
+                margin: 0 1.5em;
+            }
+        }
     }
+
     .cta-btn{
-        display: none;
+        @extend %cta-btn;
     }
+
+    .cta-btn:hover{
+        @extend %cta-btn-hover;
+    }   
 
     &-hamburger{
-
-        // border: 1px solid magenta;
         z-index: 2;
         cursor: pointer;
         span{
@@ -51,14 +61,10 @@
             background-color: color(blueDark);
             width: 1.5625em;
             height: 0.25em;
-            //border: 2px solid red;
-            
         }
-
         span:not(:last-child){
             margin-bottom: 0.25em;
         }
-
     }
 
     &-cross{
@@ -66,8 +72,5 @@
         cursor: pointer;
         z-index: 3;
     }
-
-    
-
 }
 
