@@ -474,6 +474,67 @@
   background-color: #f25f3a !important;
 }
 
+.bottom-cta-bg {
+  position: relative;
+}
+
+.bottom-cta-bg::before {
+  content: '';
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  background: url(../../images/bg-tablet-pattern.svg);
+  background-size: 34em;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  background-position: left 0em top -3em;
+}
+
+@media screen and (max-width: 1300px) {
+  .bottom-cta-bg::before {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 971px) {
+  .bottom-cta-bg::before {
+    left: 0;
+    background-position: left -29em top 3em;
+  }
+}
+
+.bottom-cta-bg::after {
+  content: '';
+  width: 1550px;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  background: url(../../images/bg-tablet-pattern.svg);
+  background-size: 34em;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  background-position: left 75em bottom 6em;
+}
+
+@media screen and (max-width: 1555px) {
+  .bottom-cta-bg::after {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .bottom-cta-bg::after {
+    background-position: left 80em bottom 6em;
+  }
+}
+
+@media screen and (max-width: 971px) {
+  .bottom-cta-bg::after {
+    display: none;
+  }
+}
+
 .bottom-cta {
   margin-top: 4em;
   height: 25em;

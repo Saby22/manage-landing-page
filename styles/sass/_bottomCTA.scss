@@ -1,3 +1,59 @@
+.bottom-cta-bg{
+    position: relative;
+}
+
+.bottom-cta-bg::before{
+    content: '';
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    background: url(../../images/bg-tablet-pattern.svg);
+    background-size: 34em;
+    background-repeat: no-repeat;
+    opacity: 0.08;
+    background-position: left 0em top -3em;
+    
+    @include max-width(1300px)
+    {
+        width: 100%;
+    }
+    
+    @include max-width(971px)
+    {
+        left: 0;
+        background-position: left -29em top 3em;
+    }
+}
+    
+.bottom-cta-bg::after{
+    content: '';
+    width: 1550px;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    background: url(../../images/bg-tablet-pattern.svg);
+    background-size: 34em;
+    background-repeat: no-repeat;
+    opacity: 0.08;
+    background-position: left 75em bottom 6em;
+    
+    @include max-width(1555px)
+    {
+        right: 0;
+    }
+    
+    @include max-width(1300px)
+    {
+        background-position: left 80em bottom 6em;
+    }
+    
+    @include max-width(971px)
+    {
+        display: none;
+    }
+}
+
 .bottom-cta{
 
     margin-top:4em;
