@@ -25,9 +25,17 @@
 
         li{
             margin: 0 0.9em;
-            color: color(blueDark);
             font-weight: 500;
             font-size: 0.9rem;
+            a{
+                color: color(blueDark);
+                font-weight:500;
+                transition: opacity 200ms ease-in-out;
+            }
+
+            a:hover{
+                opacity: 50%;
+            }
 
             //At 1090px , increase the margin between the nav links
             @include min-width(1090px){

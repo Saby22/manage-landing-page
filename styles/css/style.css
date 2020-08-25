@@ -72,9 +72,19 @@
 
 .nav-links ul li {
   margin: 0 0.9em;
-  color: #242d52;
   font-weight: 500;
   font-size: 0.9rem;
+}
+
+.nav-links ul li a {
+  color: #242d52;
+  font-weight: 500;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.nav-links ul li a:hover {
+  opacity: 50%;
 }
 
 @media screen and (min-width: 1090px) {
@@ -663,6 +673,12 @@ footer {
 
 .footer-container .links ul li a {
   color: white;
+  -webkit-transition: color 170ms ease-in-out;
+  transition: color 170ms ease-in-out;
+}
+
+.footer-container .links ul li a:hover {
+  color: #f25f3a;
 }
 
 @media screen and (min-width: 971px) {
@@ -687,12 +703,22 @@ footer {
 
 .footer-container .social-logos img {
   width: 36px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
 
 @media screen and (min-width: 971px) {
   .footer-container .social-logos img {
     width: 21px;
   }
+}
+
+.footer-container .social-logos img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 @media screen and (min-width: 971px) {

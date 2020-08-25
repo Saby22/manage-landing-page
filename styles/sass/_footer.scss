@@ -87,6 +87,11 @@ footer{
                 margin-bottom: 0.8em;
                 a{
                     color: white;
+                    transition: color 170ms ease-in-out;
+                }
+
+                a:hover{
+                    color: color(brightRed);
                 }
             }  
         }
@@ -108,10 +113,16 @@ footer{
 
         img{
             width: 36px;
+            cursor: pointer;
+            transition: transform 200ms ease-in-out;
 
             @include min-width(971px){
                 width:21px;
             }
+        }
+
+        img:hover{
+            transform: scale(1.5);
         }
         
         //Set the position @971px
@@ -133,7 +144,7 @@ footer{
             @include min-width(971px){
                 height: 24px;
             }
-        }   
+        }
         
         //Set the position @971px
         @include min-width(971px){
