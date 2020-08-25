@@ -33,6 +33,10 @@ The users should be able to:
 
 - Swiper JS
 
+## Where Can I Find The hosted Version?
+
+- The hosted version can be found [here](saby22.github.io/manage-landing-page)
+
 ## Where To Find This Challenge?
 
 The design of the landing page was provided by [Frontend Mentor](https://www.frontendmentor.io).
