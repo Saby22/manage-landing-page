@@ -33,9 +33,9 @@ The users should be able to:
 
 - Swiper JS
 
-## Where Can I Find The hosted Version?
+## Where Can I Find The Hosted Version?
 
-- The hosted version can be found [here](saby22.github.io/manage-landing-page)
+- The hosted version can be found [here](https://saby22.github.io/manage-landing-page/)
 
 ## Where To Find This Challenge?
 
