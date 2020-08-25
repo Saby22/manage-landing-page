@@ -1,0 +1,152 @@
+.info-and-pointers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    //change flex direction at a minimum width of 971px
+    @include min-width(971px){
+        flex-direction: row;
+        align-items: start;
+        max-width: 1120px;
+        margin: 0 auto 4em auto;
+        width:90%;
+    }
+}
+
+.info{
+    width: 90%;
+    margin:0 auto 3em auto;
+    height: auto;
+    text-align: center;
+
+    //change the width of this section @ 971px
+    @include min-width(971px){
+        width: 45%;
+        text-align: left;
+        margin:1em 0 0 0;
+    }
+
+    @include min-width(1090px){
+        margin-top: 1em;
+    }
+
+    h2{
+        margin: 0;
+        font-size: 2.1rem;
+        line-height: 1.5em;
+        color: color(blueDark);
+        font-weight: 700;
+
+        //change the font size of this section @ 971px
+        @include min-width(971px){
+            font-size: 2.1rem;
+            letter-spacing: 0.07em;
+        }
+    }
+
+    p{
+        color: color(darkGrayishBlue);
+        line-height: 1.8em;
+        margin: 1.2em 0 0 0;
+
+        //change the width of this section @ 971px
+        @include min-width(971px){
+            width: 90%;
+        }
+
+        //change the width of this section @ 1090px
+        @include min-width(1090px){
+            width: 80%;
+        }
+    }
+}
+
+%pointer-style{
+
+    .pointers-container{
+        background-color:color(veryPaleRed);
+        height: 2.6em;
+        display: flex;
+        align-items: center;
+        border-radius: 50px 0 0 50px;
+        margin-left: 0.4em;
+
+        //change the div color @971px
+        //change the position of the pointers container @971px
+        @include min-width(971px){
+            background-color: transparent;
+            position: relative;
+            margin: 0;
+        }
+    }
+
+    .number{
+        display: inline;
+        border-radius: 50px;
+        background-color:color(brightRed);
+        padding: 0.5em 1.7em;
+        text-align: center;
+        color: white;
+        margin-right: 0.6em;
+
+        //change the position of the numbering @971px
+        @include min-width(971px){
+            position: absolute;
+            left: -6em;
+            top: 0.2em;
+            margin: 0;
+            padding: 0.5em 1.4em;
+        }
+    }
+
+    h3{
+        color: color(blueDark);
+        display: inline;
+        font-size: 0.91rem;
+        font-weight: 700;
+
+        //change the h3 size at 383px
+        @include min-width(383px){
+            font-size: 1rem;
+        }
+    }
+
+    p{
+        margin:0;
+        color: color(darkGrayishBlue);
+        line-height: 2em;
+        padding: 0.7em 1.075em 3.1em 0.23em;
+        font-size: 0.9rem;
+
+        //change the p font size at 630px
+        @include min-width(630px){
+            font-size: 0.95rem;
+        }
+
+        //change the padding of p @971px
+        @include min-width(971px){
+            padding: 0.7em 0 3.1em 0;
+            line-height: 1.6em;
+        }
+    }
+};
+
+.pointers{
+
+    padding:0 0 0 0.6em;
+    width: 100%;
+    height: auto;
+
+    //change the width of this section @ 971px
+    @include min-width(971px){
+        width: 40%;
+    }
+    
+    h3{
+        margin: 0;
+    }
+
+    &-1,&-2,&-3{
+        @extend %pointer-style;
+    }
+}

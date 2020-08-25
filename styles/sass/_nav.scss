@@ -1,7 +1,6 @@
 .nav{
-    //border:1px solid magenta;
     display: flex;
-    max-width: 1400px;
+    max-width: 1120px;
     width: 90%;
     height: 3.75em;
     justify-content: space-between;
@@ -17,22 +16,23 @@
         height: 1.5em;
         background-size: contain ;
         background-repeat: no-repeat;
-        // border: 1px solid magenta;
         background-position: center; 
     }
 
     &-links ul{
         display: flex;
         padding-left: 0;
+
         li{
             margin: 0 0.9em;
-            //At 1200px , increase the margin between the nav links
-            @include min-width(1200px){
-                margin: 0 1.5em;
-            }
             color: color(blueDark);
             font-weight: 500;
             font-size: 0.9rem;
+
+            //At 1090px , increase the margin between the nav links
+            @include min-width(1090px){
+                margin: 0 1.5em;
+            }
         }
     }
 
@@ -45,7 +45,6 @@
     }   
 
     &-hamburger{
-        // border: 1px solid magenta;
         z-index: 2;
         cursor: pointer;
         span{
@@ -54,8 +53,6 @@
             background-color: color(blueDark);
             width: 1.5625em;
             height: 0.25em;
-            //border: 2px solid red;
-            
         }
         span:not(:last-child){
             margin-bottom: 0.25em;

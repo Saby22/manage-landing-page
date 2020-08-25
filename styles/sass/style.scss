@@ -2,26 +2,17 @@
 @import 'nav';
 @import 'background';
 @import 'hero';
-@import 'info';
-@import 'pointers';
+@import 'infoAndPointers';
 @import 'carousel';
 @import 'bottomCTA';
 @import 'footer';
 @import 'hamburgerStyles';
 
-
-// @import 'bg';
-
-// @import 'hero';
-// @import 'info';
-
 html{
-
     box-sizing: border-box;
 }
 
 *,*::before,*::after{
-
     box-sizing: inherit;
 }
 

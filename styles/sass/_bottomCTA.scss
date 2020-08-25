@@ -6,6 +6,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    //Change width of the container @971px
+    @include min-width(971px){
+        height: 215px;
+    }
     .container{
         width: 80%;
         text-align: center;
@@ -14,12 +19,28 @@
         height: auto;
         margin: 0;
 
+        //change flex direction @971px
+        @include min-width(971px){
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1120px;
+            margin: 0;
+        }   
+
         h1{
             font-size: 2.5rem;
             line-height: 1.2em;
             color: white;
             font-weight: 700;
             margin: 0 0 1em 0;
+
+            //change h1 width @971px
+            @include min-width(971px){
+                width: 48%;
+                text-align: left;
+                margin: 0;
+            }   
         }
 
         .cta-btn{

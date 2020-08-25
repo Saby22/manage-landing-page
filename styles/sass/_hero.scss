@@ -1,15 +1,20 @@
 .hero-container{
 
-    max-width: 1400px;
+    max-width: 1120px;
     width: 90%;
+    height: auto;
     margin: 1.875em auto 7em auto;
     display: flex;
     flex-direction: column;
-    height: auto;
-    //border: 1px solid black;
-    //Change flex direction at 961px
-    @include min-width(961px){
+    text-align: center;
+
+    //Change flex direction at 971px
+    @include min-width(971px){
         flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        margin: 4em auto 5em auto;
+        text-align: left;
     }
 
     .hero-image{
@@ -20,32 +25,57 @@
             max-width: 100%;
         }
 
-        //Change flex order at 961px
-        @include min-width(961px){
+        //Change flex order at 971px
+        @include min-width(971px){
             order: 2;
+            margin: 0;
+            max-width: 35em;
         }
-        
+
+        //Lower the image size at 1090px
+        @include max-width(1090px){
+            max-width: 30em;
+        }
     }
 
     .hero-text{
         order: 2;
         height: 50%;
         width: 100%;
-        text-align: center;
 
+        //Change the width percentage of the hero text div @ 971px
+        @include min-width(971px){
+            width: 45%;
+        }
+
+        //Change the width percentage of the hero text div @ 1090px
+        @include min-width(1090px){
+            width: 40%
+        }
+        
         h1{
-
             color: color(blueDark);
             line-height: 1.3em;
             font-size: 2.3rem; 
             font-weight: 700;   
             margin:0;
+
+            //change the font size @ 971px
+            @include min-width(971px){
+                font-size: 3rem; 
+            }
         }
 
         p{
             color: color(darkGrayishBlue);
             margin: 1.2em 0 2.8em 0;
             line-height: 1.9em;
+
+            //Change the width percentage of the paragraph @ 971px
+            @include min-width(971px){
+                line-height: 1.7em;
+                width: 80%;
+            }
         }
     }
 
@@ -55,6 +85,5 @@
 
     .cta-btn:hover{
         @extend %cta-btn-hover;
-    }   
-
+    }
 }

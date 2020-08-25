@@ -14,12 +14,6 @@ $colors:(
     @return map-get($colors, $colorName);
 }
 
-
-
-
-
-
-
 /*mixins*/
 @mixin min-width($width){
     @media screen and (min-width:$width){
