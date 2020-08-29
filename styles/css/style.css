@@ -198,7 +198,7 @@
       -ms-flex-order: 1;
           order: 1;
   max-width: 27.875em;
-  margin: 0 auto 3em auto;
+  margin: 0 auto -0.3em auto;
 }
 
 .hero-container .hero-image img {

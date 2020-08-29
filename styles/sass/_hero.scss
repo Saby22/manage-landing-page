@@ -19,7 +19,7 @@
     .hero-image{
         order: 1;
         max-width: 27.875em;
-        margin: 0 auto 3em auto;
+        margin: 0 auto -0.3em auto;
         img{
             max-width: 100%;
         }
@@ -35,6 +35,9 @@
         @include max-width(1090px){
             max-width: 30em;
         }
+
+        //Decrease the bottom margin @620px
+        
     }
 
     .hero-text{
